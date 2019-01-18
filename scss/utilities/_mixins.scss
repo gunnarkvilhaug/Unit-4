@@ -1,0 +1,7 @@
+@mixin colstyle ($color) {
+    background-color: $color;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    color: $txt-color;
+}
