@@ -1,0 +1,11 @@
+
+button.theme__colors {
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+.btn--default {
+    @include colstyle($secondary-color);
+    @include btnstyle(white);
+}

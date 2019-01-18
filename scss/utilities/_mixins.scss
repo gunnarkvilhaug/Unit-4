@@ -1,7 +1,16 @@
-@mixin colstyle ($color) {
-    background-color: $color;
-    width: 100%;
-    margin: auto;
+@mixin colstyle ($backgroundColor) {
+    background-color: $backgroundColor;
+    padding: 10px 5px 0 5px;
     border-radius: 5px;
     color: $txt-color;
+    margin: 5px;
+    height: 25px;
+}
+
+@mixin btnstyle ($color: white) {
+    color: $color;
+    text-align: center;
+    text-transform: uppercase;
+    border-style: none;
+    height: 30px;
 }
