@@ -10,16 +10,14 @@
 }
 
 .headline--primary {
-    font-size: 2em;
+    @extend %headlinebig;
     color: $primary-color;
-    font-weight: 900;
     padding-left: 20px;
     width: 70%;
 }
 
 .headline--secondary {
-    font-size: 1.25em;
-    font-weight: lighter;
+    @extend %headlinesmall;
     padding-top: 30px;
     padding-left: 15px;
 }

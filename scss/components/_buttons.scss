@@ -7,29 +7,29 @@ button.theme__colors {
 .btn--default {
     @include colstyle($secondary-color);
     @include btnstyle(white);
-    @include buttons-padding;
+    @extend %buttons-padding;
 }
 
 .btn--success {
     @include colstyle($btn-color1);
     @include btnstyle(white);
-    @include buttons-padding;
+    @extend %buttons-padding;
 }
 
 .btn--error {
     @include colstyle($btn-color2);
     @include btnstyle(white);
-    @include buttons-padding;
+    @extend %buttons-padding;
 }
 
 .btn--warning {
     @include colstyle($btn-color3);
     @include btnstyle(white);
-    @include buttons-padding; 
+    @extend %buttons-padding; 
 }
 
 .btn--info {
     @include colstyle($btn-color4);
     @include btnstyle(white);
-    @include buttons-padding;
+    @extend %buttons-padding;
 }
