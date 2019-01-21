@@ -1,0 +1,25 @@
+
+// .form
+// .form__label--hidden
+// .form__input
+
+.form__label--hidden {
+    display: none;
+}
+
+.form__input {
+display: block;
+width: 85%;
+height: 40px;
+margin: auto;
+margin-top: 10px;
+padding-left: 10px;
+border-style: none;
+border-bottom: 6px solid $primary-color;
+
+    &::placeholder {
+        color: $txt-color;
+        font-weight: bold;    
+    }
+
+}

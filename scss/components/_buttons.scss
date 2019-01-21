@@ -1,11 +1,35 @@
 
 button.theme__colors {
     display: block;
-    clear: both;
-    width: 100%;
+    width: 90%;
 }
 
 .btn--default {
     @include colstyle($secondary-color);
     @include btnstyle(white);
+    @include buttons-padding;
+}
+
+.btn--success {
+    @include colstyle($btn-color1);
+    @include btnstyle(white);
+    @include buttons-padding;
+}
+
+.btn--error {
+    @include colstyle($btn-color2);
+    @include btnstyle(white);
+    @include buttons-padding;
+}
+
+.btn--warning {
+    @include colstyle($btn-color3);
+    @include btnstyle(white);
+    @include buttons-padding; 
+}
+
+.btn--info {
+    @include colstyle($btn-color4);
+    @include btnstyle(white);
+    @include buttons-padding;
 }

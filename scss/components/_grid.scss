@@ -10,8 +10,12 @@
 //    text-transform: uppercase;
 //} 
 
+html {
+    box-sizing: border-box;
+} 
+
 .container {
-    margin: 10px;
+    margin: 50px;
 }
 
 .grid__row {
@@ -21,31 +25,39 @@
 
 div.theme__colors.grid__col--12{
     @include colstyle ($primary-color);
+    @include grid-system-padding;
 }
 div.theme__colors.grid__col--6{
     @include colstyle ($btn-color6);
+    @include grid-system-padding;
 }
 
 div.theme__colors.grid__col--4{
     @include colstyle ($secondary-color);
+    @include grid-system-padding;
 }
 
 div.theme__colors.grid__col--3{
     @include colstyle ($btn-color7);
+    @include grid-system-padding;
 }
 
 div.theme__colors.grid__col--5{
     @include colstyle ($btn-color8);
+    @include grid-system-padding;
 }
 
 div.theme__colors.grid__col--3{
     @include colstyle ($btn-color7);
+    @include grid-system-padding;
 }
 
 div.theme__colors.grid__col--7{
     @include colstyle ($btn-color9);
+    @include grid-system-padding;
 }
 
 div.theme__colors.grid__col--8{
     @include colstyle ($btn-color10);
+    @include grid-system-padding;
 }

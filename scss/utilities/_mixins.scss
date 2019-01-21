@@ -1,9 +1,10 @@
+
+// COLOR BUTTONS -----------------------------------------------------------
+
 @mixin colstyle ($backgroundColor) {
     background-color: $backgroundColor;
-    padding: 10px 5px 0 5px;
-    border-radius: 5px;
+    border-radius: 6px;
     color: $txt-color;
-    margin: 5px;
     height: 25px;
 }
 
@@ -12,5 +13,23 @@
     text-align: center;
     text-transform: uppercase;
     border-style: none;
-    height: 30px;
+    padding-bottom: 30px;
+}
+
+@mixin grid-system-padding {
+    padding: 15px 0px 7px 10px;
+    margin-bottom: 10px;
+}
+
+@mixin buttons-padding {
+    margin: 20px auto 20px auto;
+    padding: 15px 0 30px 0;
+}   
+
+// IMAGES ------------------------------------------------------------------
+
+@mixin imagestyle {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

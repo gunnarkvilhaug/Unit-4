@@ -1,5 +1,19 @@
-img{
-    max-width: 100%;
-    height: auto;
+
+.img--avatar,
+.img--logo,
+.img--frame {
+    @include imagestyle;
 }
 
+.img--avatar,
+.img--logo {
+    margin: 30px auto 40px auto; 
+}
+
+.img--frame {
+
+    height: auto;
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #adadad;
+}

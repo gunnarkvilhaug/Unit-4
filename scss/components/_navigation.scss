@@ -1,0 +1,26 @@
+
+.nav {
+    list-style-type: none;
+    text-align: center;
+    padding-inline-start: 0;
+}
+
+.nav__item {
+    width: 100%;
+    @include colstyle (transparent);
+    @include grid-system-padding;
+
+    a { 
+        color: gray;
+        font-size: 1.2em;
+        text-decoration: none;
+        display: block;
+        
+    }
+
+    &:hover {
+        background-color: $primary-color;
+
+        a {color: white;}
+    }
+}
