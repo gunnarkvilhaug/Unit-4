@@ -34,7 +34,7 @@
 
     .nav__item {
         display: inline-block;
-        width: 90px;
+        width: calc(20% - 5px);
         padding-top: 10px;
         padding-bottom: 5px;
     }
