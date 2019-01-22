@@ -61,3 +61,60 @@ div.theme__colors.grid__col--8{
     @include colstyle ($btn-color10);
     @extend %grid-system-padding;
 }
+
+
+// DESKTOP - MQ ====================================
+
+@include mq(desktop) {
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .grid__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .theme__colors {
+        text-align: center;
+        margin: 5px;
+    }
+
+    .grid__col--12 {
+        width: 100%;
+    }
+
+    .grid__col--6 {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .grid__col--4 {
+        width: 33%;
+        align-content: center;
+    }
+
+    .grid__col--3 {
+        width: 25%;
+    }
+
+    .grid__col--5 {
+        width: 45%;
+    }
+
+    .grid__col--7 {
+        width: 55%;
+        margin: auto;
+    }
+
+    .grid__col--8 {
+        width: 66%;
+        padding-right: 70px;
+    }
+
+    .grid__col--9 {
+        width: 66%;
+    }
+}

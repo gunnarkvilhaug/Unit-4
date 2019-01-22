@@ -1,16 +1,15 @@
 
 .nav {
-    list-style-type: none;
-    text-align: center;
-    padding-inline-start: 0;
+    padding: 0;
 }
 
 .nav__item {
-    width: 100%;
+    @extend %someair;
     @include colstyle (transparent);
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
 
     a { 
         color: gray;
@@ -23,4 +22,21 @@
         background-color: $primary-color;
         a {color: white;}
     }
+}
+
+// DESKTOP - MQ ====================================
+
+@include mq(desktop) {
+
+    .nav {
+        margin-top: 55px;
+    }
+
+    .nav__item {
+        display: inline-block;
+        width: 100px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
 }

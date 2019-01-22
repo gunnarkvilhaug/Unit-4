@@ -15,3 +15,13 @@
     border-style: none;
     padding-bottom: 30px;
 }
+
+// MEDIA QUERIES ------------------------------------------------------------
+
+@mixin mq($break) {
+    @if $break == "desktop" {
+        @media (min-width: $desktop) {
+            @content;
+        }
+    }
+}

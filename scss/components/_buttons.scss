@@ -33,3 +33,21 @@ button.theme__colors {
     @include btnstyle(white);
     @extend %buttons-padding;
 }
+
+// DESKTOP MQ -------------------------------------------
+
+@include mq(desktop) {
+
+    button.theme__colors {
+        justify-content: center;
+        display: inline-block;
+        width: calc(20% - 15px);
+    }
+
+    .form button {
+        width: 100%;
+        margin: 40px auto auto auto;
+        display: block;
+    }
+
+}

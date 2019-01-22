@@ -372,6 +372,17 @@ div.theme__colors.grid__col--8, div.theme__colors.grid__col--7, div.theme__color
   font-weight: 900;
 }
 
+.nav__item {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .container {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -406,8 +417,6 @@ div.theme__colors.grid__col--8, div.theme__colors.grid__col--7, div.theme__color
 }
 
 .link {
-  font-weight: bold;
-  text-decoration: none;
   color: #52ddfc;
 }
 
@@ -480,6 +489,58 @@ div.theme__colors.grid__col--8 {
   height: 25px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .grid__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .theme__colors {
+    text-align: center;
+    margin: 5px;
+  }
+
+  .grid__col--12 {
+    width: 100%;
+  }
+
+  .grid__col--6 {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .grid__col--4 {
+    width: 33%;
+    align-content: center;
+  }
+
+  .grid__col--3 {
+    width: 25%;
+  }
+
+  .grid__col--5 {
+    width: 45%;
+  }
+
+  .grid__col--7 {
+    width: 55%;
+    margin: auto;
+  }
+
+  .grid__col--8 {
+    width: 66%;
+    padding-right: 70px;
+  }
+
+  .grid__col--9 {
+    width: 66%;
+  }
+}
 button.theme__colors {
   display: block;
   width: 90%;
@@ -545,6 +606,19 @@ button.theme__colors {
   padding-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  button.theme__colors {
+    justify-content: center;
+    display: inline-block;
+    width: calc(20% - 15px);
+  }
+
+  .form button {
+    width: 100%;
+    margin: 40px auto auto auto;
+    display: block;
+  }
+}
 .form__label--hidden {
   display: none;
 }
@@ -577,20 +651,17 @@ button.theme__colors {
 }
 
 .nav {
-  list-style-type: none;
-  text-align: center;
-  padding-inline-start: 0;
+  padding: 0;
 }
 
 .nav__item {
-  width: 100%;
   background-color: transparent;
   border-radius: 6px;
   color: #898383;
   height: 25px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
 }
 .nav__item a {
   color: gray;
@@ -603,6 +674,19 @@ button.theme__colors {
 }
 .nav__item:hover a {
   color: white;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    margin-top: 55px;
+  }
+
+  .nav__item {
+    display: inline-block;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
