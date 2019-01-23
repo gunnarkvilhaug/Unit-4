@@ -73,8 +73,7 @@ div.theme__colors.grid__col--8{
     }
 
     .grid__row {
-        @include flexbox;
-        justify-content: space-between;
+        @include flexbox (space-betweeen);
     }
 
     .theme__colors {

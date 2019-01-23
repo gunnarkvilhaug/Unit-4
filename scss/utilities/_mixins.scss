@@ -16,8 +16,9 @@
     padding-bottom: 30px;
 }
 
-@mixin flexbox {
+@mixin flexbox ($JustifyContent) {
     display:flex;
+    justify-content: $JustifyContent;
 }
 
 // MEDIA QUERIES ------------------------------------------------------------
