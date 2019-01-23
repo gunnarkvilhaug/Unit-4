@@ -653,6 +653,12 @@ button.theme__colors {
   border: 1px solid #adadad;
 }
 
+@media (min-width: 768px) {
+  .img--frame {
+    max-width: 90%;
+    margin: auto;
+  }
+}
 .nav {
   padding: 0;
 }
